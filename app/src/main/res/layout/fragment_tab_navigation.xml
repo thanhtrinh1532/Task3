@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/green"
+    android:gravity="center_vertical">
+    <!-- Chats Tab -->
+    <ImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/groups_people"
+        android:contentDescription="Camera"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tab_chats"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Chats"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Updates Tab -->
+    <TextView
+        android:id="@+id/tab_updates"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Updates"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <!-- Calls Tab -->
+    <TextView
+        android:id="@+id/tab_calls"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Calls"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+</LinearLayout>

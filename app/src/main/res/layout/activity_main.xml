@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- Header Fragment -->
+    <FrameLayout
+        android:id="@+id/header_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/green"/>
+
+    <!-- Tab Navigation Fragment -->
+    <FrameLayout
+        android:id="@+id/tab_navigation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/header_fragment"
+        android:background="@color/green"/>
+
+    <!-- Content Fragment (Chat List) -->
+    <FrameLayout
+        android:id="@+id/content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_navigation_fragment"
+        android:padding="8dp" />
+
+    <!-- Floating Action Button Fragment -->
+    <FrameLayout
+        android:id="@+id/fab_fragment"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
